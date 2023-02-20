@@ -1,0 +1,81 @@
+/*Universal css to start at 0,0*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ----------------- START :: Header ---------------------- */
+/*Header CSS*/
+.tvHeader{
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    color: white;
+    background-color: #145f94 ;
+}
+/* ----------------- END :: Header ---------------------- */
+
+/* -------------- START :: TV container ----------------- */
+.cardsContainer{
+    width:80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/*Left container CSS*/
+.tvLeftContainer{
+    margin: 8px 0;
+    margin-right: 2%;
+    width: 62%;
+    float: left;
+}
+
+/*Right container CSS*/
+.tvRightContainer{
+    margin: 8px 0;
+    width: 35%;
+    float: right;
+}
+
+/*TV card container CSS*/
+.tvCard{
+    margin-top: 23px;
+    width: 100%;
+    border: #145f94;
+    border-style: solid;
+    display: block;
+}
+
+/*TV card heading CSS*/
+.tvCardHeading{
+    padding: 20px 20px;
+    font-size: 19px;
+    font-weight: 500px;
+    background-color: #145f94;
+    color: white;
+}
+
+/*TV card description CSS*/
+.tvCardDesc{
+    padding: 25px;
+    background-color: #f6f6f6;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/*CSS to fix the floating space*/
+.floatClearfix{
+    clear: both;
+}
+/* -------------- END :: TV container ----------------- */
+
+/*CSS to make page resposive*/
+@media only screen and (max-width: 600px) {
+    .tvLeftContainer,.tvRightContainer{
+      float: none;
+      width: 95%;
+    }
+}
