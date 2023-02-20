@@ -1,0 +1,122 @@
+/*Universal css to start at 0,0*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Header css*/
+.touristHeader{
+    text-align: center;
+    background-color: #43133e ;
+    color: white;
+    font-size: 48px;
+    padding: 30px 20px;
+    font-weight: 600;
+}
+
+/*Tourist Cards Container CSS*/
+.touristCardHeading{
+    font-size: 35px;
+    color: #444343;
+    width: 90%;
+    font-weight: 300;
+    font-size: 34px;
+}
+
+.touristCardSubHeading{
+    margin-top:10px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.touristCardContent{
+    color: #303030;
+    width: 90%;
+}
+
+/*Landing img div css*/
+.landingImg{
+    width: 100%;
+    
+}
+
+/*Landing img css*/
+.landingImg img{
+    height: 90vh;
+    object-fit: cover;
+}
+
+/*Tourist cards div section css*/
+.touristCardContainer{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+/*Tourist cards columns css*/
+.touristCard{
+    display:inline-block;
+    width: 30.5%;
+    margin: 15px 20px 55px 20px;
+}
+
+/*Read more button css*/
+button{
+    background-color: #7a1655;
+    color: white;
+    margin-top:15px;
+    padding: 12px 28px;
+    border: none;
+    font-size: 18px;
+    font-weight: small;
+    cursor: pointer;
+    width: max-content;
+}
+
+/*Card img css*/
+.cardImg{
+    width: 100%;
+}
+
+/*Many Wonders One Emotion text section css*/
+.slogan{
+    color: #9d046a;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 54px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.sloganDesc{
+    width: 70%;
+    margin:auto;
+    text-align: justify;
+    font-weight: 200;
+    color: #545353;
+    margin-bottom: 70px;
+    font-size: 35px;
+    line-height: 1.4;
+}
+
+/*Footer css*/
+.touristFooter{
+    background-color: #7a1655 ;
+    color: white;
+    padding: 30px 120px;
+    margin: 20px 0px 0px 0px;
+}
+
+.copyrightFooter{
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+.creditFooter{
+    font-size:small;
+    font-size: 16px;
+}
