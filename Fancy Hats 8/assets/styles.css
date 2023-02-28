@@ -1,0 +1,142 @@
+/*Universal css to start at 0,0*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Backgorund image CSS */
+.bg-img {
+    background: url('./images/background.png'),rgb(132, 132, 133);
+    background-size: cover;
+}
+
+/* ----------------- START :: Header ---------------------- */
+/* Menu container */
+.menu-container {
+    position: relative;
+}
+
+/*Menu icon CSS*/
+.menu-icon {
+    padding: 25px;
+    position: absolute;
+    font-size: 40px;
+    background-color: black;
+    color: white;
+}
+
+/* Menu dropdown */
+.menu-dropdown {
+    margin-top: 25px ;
+    margin-left: -320px;
+    padding: 30px 20px 20px 30px;
+    position: fixed;
+    border-radius: 0px 20px 20px 0px;
+    background-color: black;
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+    transition-duration: 2s;
+}
+
+/* CSS for each element in dropdown */
+.menu-dropdown li {
+    padding: 12px 30px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* CSS for hat icon in dropdown */
+.menu-dropdown .hat-icon img{
+    padding: 35px 30px 10px 50px;
+    text-align: center;
+}
+
+/* Menu dropdown on hover CSS */
+.menu-dropdown div:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+
+/* Menu icon hover CSS */
+.menu-icon:hover .menu-dropdown{
+    display: block;
+    transform: translate(270px);
+}
+
+/* Heading CSS */
+.heading {
+    margin-top: 50px;
+    font-size: 90px;
+    color: white;
+    text-align: center;
+}
+
+/* CSS for since 1857 */
+.hats-age {
+    position: absolute;
+    top: 160px;
+    right: -110px;
+    color: white;
+    font-size: 40px;
+    transform: rotate(270deg);
+}
+/* ----------------- END :: Header ---------------------- */
+
+/* ----------------- START :: Main section ---------------------- */
+/* 1867 CSS */
+.hats-age-num {
+    font-size: 110px;
+}
+
+/* Div tag CSS */
+.slogan-div {
+    position: relative;
+    top: 750px;
+}
+
+/* Slogan CSS */
+.slogan {
+    position: absolute;
+    left: 580px;
+    bottom: 150px;
+    font-size: 100px;
+    color: white;
+}
+
+.slogan-cont {
+    position: absolute;
+    left: 580px;
+    bottom: 25px;
+    font-size: 130px;
+    color: white;
+    text-align: center;
+}
+/* ----------------- END :: Main section ---------------------- */
+
+/* ----------------- START :: Icons section ---------------------- */
+/* CSS for icons div container */
+.icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* CSS for fb icon*/
+.fb-icon {
+    margin-top: 760px;
+    margin-right: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+/* CSS for twitter icom */
+.twitter-icon {
+    margin-top: 760px;
+    margin-right: 10px;
+    font-size: 30px;
+    color: white;
+}
+/* ----------------- END :: Icons section ---------------------- */
