@@ -1,0 +1,271 @@
+/*Universal css to start at 0,0*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+/* Background colour CSS */
+.bg-color {
+    background-color: black;
+}
+
+/* ----------------- START :: Header ---------------------- */
+/* Navbar CSS */
+.math-kids-navbar {
+    padding: 25px;
+    background-color: #a9e087;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+/* ----------------- END :: Header ---------------------- */
+
+/* ----------------- START :: Choose a shape CSS ---------------------- */
+/* Choosing shape section CSS */
+.choose-shape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* display: none; */
+}
+
+/* CSS for 'Choose a shape' CSS */
+.txt-choose-shape {
+    margin-top: 270px;
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    color: white;
+}
+
+/* Shapes div CSS */
+.shapes {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Tick within shape CSS */
+.tick {
+    margin: 50px 0 0 50px;
+    font-size: 56px;
+    color: white;
+}
+
+/* Tick for triangle */
+.triangle-tick {
+    margin: 50px 0px 20px -30px;
+    font-size: 56px;
+    color: white;
+}
+
+/* Circle CSS */
+.circle {
+    margin: 0px 40px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #00987d;
+    cursor: pointer;
+}
+
+/* Triangle CSS */
+.triangle {
+    margin: 0px 40px;
+    width: 0px;
+    height: 0px;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 150px solid #ffabdc;
+    cursor: pointer;
+}
+
+/* Square CSS */
+.square {
+    margin: 0px 40px;
+    width: 150px;
+    height: 150px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+/* Next button CSS */
+.next-button {
+    margin: 80px auto;
+    padding: 10px 110px;
+    border-radius: 5px;
+    font-size: 25px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border: solid white;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+/* ----------------- END :: Choose a shape section CSS ---------------------- */
+
+/* ----------------- START :: Enter measurements CSS ---------------------- */
+/* Measurements section CSS */
+.measurements {
+    display: flex;
+    justify-content: center;
+}
+
+/* ----------------- Circle section CSS -----------------*/
+/* Parent div for section */
+.circle-radius, .triangle-base-height, .square-side{
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Circl text CSS */
+.txt-enter-radius {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+/* Textbox CSS */
+.radius {
+    margin-top: 50px;
+    width: 700px;
+    height: 90px;
+    border: solid  white;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 0;
+}
+
+/* Calculate button CSS */
+.calculate-button {
+    margin: 50px auto;
+    padding: 10px 110px;
+    border-radius: 5px;
+    font-size: 25px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border: solid white;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+/* ----------------- END :: Enter measurements CSS ---------------------- */
+
+
+/* ----------------- START :: Display area, perimeter section CSS ---------------------- */
+/* Shape info CSS  */
+.shape-info {
+    margin-top: 170px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Circle shape info CSS  */
+.circle-shape-info, .triangle-shape-info, .square-shape-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px auto;
+}
+
+
+/* Circle shape CSS  */
+.circle-shape {
+    margin: 0px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #00987d;
+}
+
+/* Text 'circle' CSS  */
+.txt-shape {
+    margin: 25px 0px 10px 0px;
+    font-size: 45px;
+    text-align: center;
+    color: white;
+}
+
+/* Button start again CSS */
+.btn-start-again {
+    margin: 65px auto 50px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 23px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border: solid white;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+
+/* Radius area perimeter container CSS */
+.info-box {
+    margin: 10px auto;
+    width: 467px;
+    background-color: #0d62d6;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    color: white;
+}
+
+/* CSS for the text radius colum */
+.txt-radius {
+    padding: 8px 16px;
+    width: 203px;
+    background-color: #0d62d6;
+}
+
+/* CSS for notation r column */
+.radius-notation {
+    padding: 8px 16px;
+    width: 130px;
+    background-color: #455d7e;
+}
+
+/* CSS for user input column */
+.user-input {
+    padding: 8px 16px;
+    width: 135px;
+    background-color: #3288ff;
+    font-size: 19px;
+}
+
+/* Triangle CSS */
+.triangle-shape {
+    margin: 0px auto;
+    width: 0px;
+    height: 0px;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 150px solid #ffabdc;
+}
+
+/* Square CSS */
+.square-shape {
+    margin: 0px auto;
+    width: 150px;
+    height: 150px;
+    background-color: #e0e0e0;
+}
+/* ----------------- END :: Display area, perimeter section CSS ---------------------- */
