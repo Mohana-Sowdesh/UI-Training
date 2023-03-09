@@ -1,0 +1,228 @@
+$blue-description: #4a90e2;
+$big-names: #cecece;
+$green-desc: #b8e986;
+$border-color: white;
+
+@mixin flex-box {
+    display: flex;
+}
+
+/*Universal css to start at 0,0*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*Universal css for images*/
+.img {
+    min-width: 100%;
+}
+
+/* Backgorund colour CSS */
+.body-bg-color {
+    background-color: black;
+    color: $border-color;
+} 
+
+/* ----------------- START :: Header ---------------------- */
+/* CSS for email */
+.email {
+    @include flex-box;
+    width: 90%;
+    padding: 70px 140px 70px 70px;
+    font-size: 30px;
+    margin: 0 auto;
+    justify-content: end;
+    font-weight: 500;
+}
+
+/* CSS for name */
+.name {
+    @include flex-box;
+    margin: 20px auto 0px auto;
+    justify-content: center;
+}
+
+/* CSS for first name */
+.first-name {
+    font-size: 120px;
+    font-weight: 300;
+}
+
+/* CSS for first name */
+.last-name {
+    padding-left: 15px;
+    font-size: 120px;
+    font-weight: 600;
+}
+
+/* CSS for profession */
+.profession {
+    @include flex-box;
+    margin: 10px auto 0px auto;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* CSS for product */
+.blue-description {
+    color: $blue-description;
+}
+
+/* CSS for spacing in profession */
+.profession-desc {
+    padding: 0px 5px 0px 5px;
+}
+
+/* Email CSS for mobile */
+.email-for-mobileresponsive {
+    width: 80%;
+    padding: 70px;
+    font-size: 25px;
+    margin: 0 auto;
+    display: none;
+    justify-content: center;
+    font-weight: 500;
+}
+/* ----------------- END :: Header ---------------------- */
+
+/* ----------------- START :: Main section ---------------------- */
+/* CSS for product images container*/
+.product-designer-images {
+    @include flex-box;
+    margin: 100px auto;
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* CSS for product images*/
+.product-designer-images {
+    img{
+        width: 430px;
+        padding: 10px 10px 10px 10px;
+    }
+}
+
+/* Big names to show off CSS */
+.big-names {
+    @include flex-box;
+    margin: 70px auto 70px auto;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: 500;
+    color: $big-names;
+}
+
+/* CSS for show off */
+.green-desc {
+    padding-left: 15px;
+    color: $green-desc; 
+}
+
+/* Company logo images container CSS */
+.company-images {
+    @include flex-box;
+    margin: 30px auto 120px;
+    width: 80%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Company logo images CSS */
+.company-images {
+    img {
+        width: 220px;
+        padding: 0px 30px 70px 30px;
+    }
+}
+/* ----------------- END :: Main section ---------------------- */
+
+
+/* ----------------- START :: Footer section ---------------------- */
+/* CSS for line */
+.line {
+    @include flex-box;
+    justify-content:center;
+}
+
+.line-at-left {
+    width: 30px;
+    border-bottom: 0.5px solid $border-color;
+}
+
+.line-at-right {
+    margin-left: 30px;
+    width: 200px;
+    border-bottom: 0.5px solid $border-color;
+}
+
+/* CSS for social media logos */
+.social-media-logos {
+    @include flex-box;
+    margin: auto;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 40px;
+}
+
+/* CSS for individual logo */
+.fb-icon {
+    margin: 90px 10px 50px 10px;
+    padding: 10px;
+    border: 0.5px solid $border-color;
+    border-radius: 50%;
+}
+
+/* CSS for 'Coded with love & passion' */
+.credits {
+    @include flex-box;
+    margin: 20px auto 80px auto;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* ----------------- END :: Footer section ---------------------- */
+
+/* Mobile responsive CSS */
+@media only screen and (max-width: 768px) {
+    .name {
+        margin-top: 200px;
+    }
+
+    .first-name {
+        font-size: 80px;
+    }
+    .last-name {
+        font-size: 80px;
+        padding-left: 10px;
+    }
+    .product-designer-images {
+        img {
+            margin: 10px 0px 0px 0px;
+            padding: 10px;
+            width: 98%;
+        }
+    }
+    .email {
+        display: none;
+    }
+    .email-for-mobileresponsive {
+        display: flex;
+        padding: 10px;
+    }
+    .big-names {
+        font-size: 37px;
+    }
+    .company-images {
+        img {
+            width: 180px;
+            padding: 0px 30px 70px 30px;
+        }
+    }
+}
