@@ -1,0 +1,135 @@
+/* Universal CSS css to start at 0,0 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Background colour CSS */
+.bg-color{
+    background-color:#f5f5f5;
+}
+
+/* CSS for all images */
+img {
+    max-width: 100%;
+}
+
+/* ----------------- START :: Header ---------------------- */
+/* Sirius icon container */
+.sirius-icon {
+    margin: 40px 0 30px 0;
+    height: 70px;
+    text-align: center;
+}
+
+/* Sirius icon img CSS */
+.sirius-icon img{
+    height: 100%;
+}
+/* ----------------- END :: Header ---------------------- */
+
+/* ----------------- START :: Main ----------------- */
+/* CSS for parent class of tabs */
+.tabs {
+    margin-top: 50px;
+    margin-left: 550px;
+    width: 631px;
+}
+
+/* Fixing height of container */
+#tabs-1, #tabs-2, #tabs-3 {
+    height: 560px;
+}
+
+/* CSS for top buttons container */
+.tabs-ul {
+    background-color: #f5f5f5 !important;
+}
+
+/* CSS for top buttons */
+.tabs-ul li {
+    margin: 0 5px !important;
+}
+
+/* Removes border of tabs */
+.ui-widget.ui-widget-content {
+    border: none !important;
+}
+
+/* Setting position for tab 1 content */
+.tab-1-content {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Removes border of header */
+.ui-widget-header {
+    border: none !important;
+}
+
+.ui-tabs {
+    padding: 0 !important;
+}
+
+/* Setting background color on clicking */
+.ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid #001b71;
+    background: #001b71 !important;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.ui-state-default , .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #000;
+    background: #000;
+    font-weight: 400;
+}
+
+.ui-state-default a {
+    color: #ffffff !important;
+}
+
+/* Styling accordion */
+#ui-id-4, #ui-id-6, #ui-id-8, #ui-id-10{
+    border: 1px solid #818eb9;
+    background:#818eb9;
+    color: white;
+}
+
+.ui-accordion-icons {
+    color: white;
+}
+
+.tab1-img {
+    margin-top: 30px;
+    width: 579px;
+    height: 240px;
+}
+
+/* Setting scroll for locations tab */
+#tabs-3 {
+    overflow: scroll;
+}
+
+.flag-img {
+    width: 30px;
+    height: 30px;
+}
+
+.tbl-location{
+    border: none;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+}
+
+.tbl-location tr {
+    width: 100%;
+    margin: 5px;
+}
+
+.tbl-location td {
+    padding: 10px;
+}
+/* ----------------- END :: Main ----------------- */
