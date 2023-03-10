@@ -1,0 +1,155 @@
+/*Universal css to start at 0,0*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+/* Background colour CSS */
+.bg-color{
+    background-color:#f5f5f5;
+}
+
+img {
+    max-width: 100%;
+}
+/* ----------------- START :: Header ---------------------- */
+/* Sirius icon container */
+.sirius-icon {
+    margin: 20px 0 30px 0;
+    height: 70px;
+    text-align: center;
+}
+
+/* Sirius icon img CSS */
+.sirius-icon img{
+    height: 100%;
+
+}
+/* ----------------- END :: Header ---------------------- */
+
+/* ----------------- START :: Form ---------------------- */
+/* Form container CSS */
+.form {
+    margin: 0px auto;
+    width: 628px;
+    height: 780px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* Billing Details heading CSS */
+.form-heading {
+    margin-left: 35px;
+    padding-top: 40px; 
+    font-weight: 500;
+    color: #001b71;
+    letter-spacing: 1px;
+}
+
+/* Text input label CSS */
+label {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+/* CSS for name container */
+.name {
+   width: 500px;
+   display: flex;
+   flex-direction: row;
+}
+
+/* CSS for first name */
+.first-name, .card-expiry{
+    margin-top: 20px;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CSS for last name */
+input[type="text"] {
+    margin-top: 5px;
+    padding: 10px;
+    height: 43px;
+    background-color: #fefefe;
+    border: 1px solid #ececec;
+    border-radius: 4px;
+}
+
+/* CSS for first name text input box */
+.first-name input[type="text"]{
+    width: 268px;
+    height: 44px;
+}
+
+/* CSS for last name */
+.last-name, .cvv{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CSS for last name text input box */
+.last-name input[type="text"] {
+    width: 270px;
+    height: 44x;
+}
+
+/* CSS for input containers */
+.email, .contact-no, .pin-code, .card-no {
+    margin-top: 20px;
+    margin-left: 35px;
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CSS for payment heading */
+.payment-heading {
+    margin-top: 10px;
+    margin-left: 35px;
+    font-weight: 500;
+    color: #001b71;
+    letter-spacing: 1px;
+}
+
+.card-expiry input[type="text"]{
+    width: 268px;
+    height: 44px;
+}
+
+.cvv input[type="text"] {
+    width: 270px;
+    height: 44x;
+}
+
+/* CSS for complete payment button */
+.btn-complete-paymnt {
+    margin-top: 20px;
+    margin-left: 35px;
+    margin-bottom: 40px;
+    padding: 15px;
+    font-size: 15px;
+    width: 560px;
+    border: none;
+    border-radius: 4px;
+    background-color: #001b71;
+    color: white;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* CSS for error message */
+.err-msg {
+    margin-top: 5px;
+    font-size: 10px;
+    color: #B4231B;
+}
+/* ----------------- END :: Form ---------------------- */
