@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body class="bg-color">
+    <!-- Sirius icon -->
+    <div class="sirius-icon">
+        <img src="./assets/images/Sirius icon.png" alt="Sirius icon"/>
+    </div>
+
+    <!----------------- START :: Form ---------------------->
+    <main>
+        <!-- Form container -->
+        <form class="form" onsubmit="return validateInputs()" >
+            <!-- Billing Details heading -->
+            <h3 class="form-heading">BILLING DETAILS</h3>
+
+            <!-- Name container -->
+            <div class="name">
+                <div class="first-name">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname">
+                    <div class="err-msg"></div>
+                </div>
+                <div class="last-name">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname">
+                    <div class="err-msg"></div>
+                </div>
+            </div>
+
+            <!-- Email container -->
+            <div class="email">
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="email">
+                <div class="err-msg"></div>
+            </div>
+
+            <!-- Contact no container -->
+            <div class="contact-no">
+                <label for="contact-no">Contact Number</label>
+                <input type="text" id="contact-no" name="contactno">
+                <div class="err-msg"></div>
+            </div>
+
+            <!-- PIN code container -->
+            <div class="pin-code">
+                <label for="pin-code">PIN Code</label>
+                <input type="text" id="pin-code" name="pincode">
+                <div class="err-msg"></div>
+            </div>
+
+            <!-- Payment details heading -->
+            <h3 class="payment-heading">PAYMENT DETAILS</h3>
+
+            <!-- Card number container -->
+            <div class="card-no">
+                <label for="card-no">Card Number</label>
+                <input type="text" id="card-no" name="cardno">
+                <div class="err-msg"></div>
+            </div>
+
+            <!-- Card details container -->
+            <div class="name">
+                <div class="card-expiry">
+                    <label for="card-expiry">Card Expiry (Year)</label>
+                    <input type="text" id="card-expiry" name="cardexpiry">
+                    <div class="err-msg"></div>
+                </div>
+                <div class="cvv">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv">
+                    <div class="err-msg"></div>
+                </div>
+            </div>
+
+            <!-- Complete payment button -->
+            <button class="btn-complete-paymnt" id="btn-complete-paymnt">COMPLETE PAYMENT</button>
+        </form>
+    </main>
+    <!----------------- END :: Form ---------------------->
+
+    <script src="./assets/scripts.js"></script>
+</body>
+</html>
