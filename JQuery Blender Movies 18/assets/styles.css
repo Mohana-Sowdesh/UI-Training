@@ -1,0 +1,303 @@
+/*Universal css to start at 0,0*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    position: relative;
+    background-color: #f5f5f5;
+}
+
+/* ----------------- START :: Header ---------------------- */
+/* Header CSS */
+.movies-header {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+}
+
+/* "Blender movies" title */
+.page-title {
+    margin: 10px 0px 10px 275px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* User profile CSS */
+.blender-profile {
+    margin-right: 275px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Profile img CSS */
+.movies-header img {
+    margin: 3px 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Profile name CSS */
+.profile-name {
+    margin: 10px 8px;
+    font-size: 12px;
+    font-weight: 400;
+}
+/* ----------------- END :: Header ---------------------- */
+
+/* ----------------- START :: Main section ---------------------- */
+/* Main section CSS */
+.main {
+    margin: 95px auto 20px auto;
+    width: 67%;
+    display: flex;
+}
+
+/* ----------------- START :: Sintel movie column ---------------------- */
+/* Sintel column CSS */
+.sintel-column {
+    margin-right: 30px;
+    width: 77%;
+}
+
+/* Sintel heading CSS */
+.sintel-heading {
+    margin: 20px 0px 10px 0px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* CSS for video */
+.video {
+    width: 100%;
+}
+
+/* Movie description CSS */
+.movie-desc {
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* Horizontal line CSS */
+.hr-line {
+    margin: 25px 0px;
+    height: 1%;
+    border-bottom: solid #e3e3e3;
+}
+
+/* 'Comments' heading CSS */
+.heading-comments {
+    margin: 20px 0px 0px 0px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Comment container */
+.comment {
+    margin-top: 20px;
+    display: flex;
+}
+
+.reviewer-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.review {
+    margin-left: 15px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewer-name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.review-desc {
+    margin-top: 7px;
+    font-size: 12px;
+    font-weight: 300;
+}
+/* ----------------- END :: Sintel movie column ---------------------- */
+
+/* ----------------- START :: Ad column ---------------------- */
+/* CSS for Upcoming projects column */
+.ad-column {
+    width: 27%;
+}
+
+/* CSS for upcoming project imgs */
+.ad-column img {
+    margin: 10px 10px 0 0;
+}
+
+/* CSS for upcoming projects heading */
+.upcoming-heading {
+    font-size: 17px;
+    font-weight: 600;
+}
+/* ----------------- END :: Ad column ---------------------- */
+/* ----------------- END :: Main section ---------------------- */
+
+
+/* Chatbot img CSS */
+.chatbot img {
+    position: fixed; 
+    bottom: 40px; 
+    right: 40px; 
+    width: 65px;
+    border-radius: 50%;
+}
+
+/* ----------------- START :: Footer ---------------------- */
+/* Footer CSS */
+.blender-footer {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #222222;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Position CSS for copyrights */
+.copyrights {
+    margin-left: 260px;
+}
+
+.copyright-symbol {
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+/* Position CSS for 'Blender Movies' */
+.page-name {
+    margin-right: 260px;
+}
+/* ----------------- END :: Footer ---------------------- */
+
+/* ----------------- START :: Mobile responsive ---------------------- */
+@media only screen and (max-width: 426px) {
+    /* "Blender movies" title */
+    .page-title {
+        margin: 10px 0px 10px 20px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    /* User profile CSS */
+    .blender-profile {
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Profile name CSS */
+    .profile-name {
+        display: none;
+    }
+
+    /* Main section CSS */
+    .main {
+        margin: 90px auto 20px auto;
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Sintel column CSS */
+    .sintel-column {
+        margin: 0 10px;
+        width: 98%;
+    }
+
+    .heading-comments {
+        margin: 10px 0px 0px 0px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .ad-column {
+        width: 96%;
+    }
+    
+    /* CSS for upcoming project imgs */
+    .ad-column img {
+        margin: 10px;
+    }
+    
+    /* .upcoming-heading::before {
+        margin: 25px 0px;
+        height: 1%;
+        border-bottom: solid #e3e3e3;
+    } */
+
+    /* CSS for upcoming projects heading */
+    .upcoming-heading {
+        margin: 30px 0px 10px 10px;
+        padding-top: 20px;
+        font-size: 14px;
+        font-weight: 700;
+        border-top: solid #e3e3e3;
+    }
+
+    /* Chatbot img CSS */
+    .chatbot img {
+        position: fixed; 
+        bottom: 30px; 
+        right: 10px; 
+        width: 65px;
+        border-radius: 50%;
+    }
+
+    /* Footer CSS */
+    .blender-footer {
+        /* padding: 25px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #222222;
+        color: white;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    /* Position CSS for copyrights */
+    .copyrights {
+       margin: 0px;
+       text-align: center;
+    }
+
+    .copyright-symbol {
+        margin-right: 8px;
+        font-size: 14px;
+    }
+
+    /* Position CSS for 'Blender Movies' */
+    .page-name {
+        margin-right: 0px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+/* ----------------- END :: Mobile responsive ---------------------- */
